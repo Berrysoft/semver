@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <Description>A semver implementation in .Net based on the v2.0.0 of the spec found at http://semver.org/.</Description>
-    <Copyright>Copyright (c) 2013 Max Hauser 2019 Berrysoft</Copyright>
+    <Copyright>Copyright (c) 2013 Max Hauser; Copyright (c) 2019 Berrysoft</Copyright>
     <AssemblyTitle>Semantic versioning</AssemblyTitle>
-    <AssemblyVersion>2.0.4</AssemblyVersion>
-    <FileVersion>2.0.4</FileVersion>
-    <Version>2.0.4</Version>
+    <AssemblyVersion>2.0.5</AssemblyVersion>
+    <FileVersion>2.0.5</FileVersion>
+    <Version>2.0.5</Version>
     <Authors>Max Hauser;Berrysoft</Authors>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
