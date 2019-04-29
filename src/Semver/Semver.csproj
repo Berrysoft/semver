@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A semver implementation in .Net based on the v2.0.0 of the spec found at http://semver.org/.</Description>
+    <Copyright>Copyright (c) 2013 Max Hauser 2019 Berrysoft</Copyright>
+    <AssemblyTitle>Semantic versioning</AssemblyTitle>
+    <AssemblyVersion>2.0.4</AssemblyVersion>
+    <FileVersion>2.0.4</FileVersion>
+    <Version>2.0.4</Version>
+    <Authors>Max Hauser;Berrysoft</Authors>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Semver</AssemblyName>
+    <PackageId>Semver</PackageId>
+    <PackageTags>semver;semantic;version</PackageTags>
+    <PackageReleaseNotes>https://github.com/Berrysoft/semver/releases</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Berrysoft/semver</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Berrysoft/semver</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+</Project>

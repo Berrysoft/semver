@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
-#if !NETSTANDARD
 using System.Runtime.Serialization.Formatters.Binary;
-#endif
 using Xunit;
 
 namespace Semver.Test
@@ -69,7 +67,7 @@ namespace Semver.Test
         [Fact]
         public void CreateVersionTestWithSystemVersion2()
         {
-            Assert.Throws(typeof(ArgumentNullException), () =>
+            Assert.Throws<ArgumentNullException>(() =>
             {
                 var v = new SemVersion(null);
             });
@@ -757,7 +755,6 @@ namespace Semver.Test
             Assert.Equal("dev", v2.Build);
         }
 
-#if !NETSTANDARD
         [Fact]
         public void TestSerialization()
         {
@@ -768,10 +765,9 @@ namespace Semver.Test
                 var bf = new BinaryFormatter();
                 bf.Serialize(ms, semVer);
                 ms.Position = 0;
-                semVerSerializedDeserialized = (SemVersion) bf.Deserialize(ms);
+                semVerSerializedDeserialized = (SemVersion)bf.Deserialize(ms);
             }
             Assert.Equal(semVer, semVerSerializedDeserialized);
         }
-#endif
     }
 }
